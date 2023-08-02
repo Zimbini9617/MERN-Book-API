@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const router = require('./routes/book-route');
+const router = require('./routes/bookRoute');
 require('dotenv').config();
 
 const app = express();
@@ -23,4 +23,3 @@ mongoose
     console.log(err);
   });
 
-//Unqls3eCmu8zBtn2
