@@ -42,10 +42,12 @@ const AddBook = () => {
   return (
     <div>
       <div>
-        <h1 className="text-center text-2xl font-bold font-mono">ADD NAME OF THE BOOK:</h1>
-        <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
+        <div className="text-center text-2xl font-bold font-mono">
+        <h1>ADD NAME OF THE BOOK:</h1>
+        </div>
+        <form className="max-w-md mx-auto bg-gray-200 border border-gray-700 rounded-lg shadow-md px-8 pt-6 pb-8 mb-4 w-[90%]" onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label htmlFor="name" className="block font-medium text-gray-800">
+            <label htmlFor="name" className="block font-medium text-black">
               Name:
             </label>
             <input
@@ -54,11 +56,11 @@ const AddBook = () => {
               name="name"
               value={book.name}
               onChange={handleChange}
-              className="mt-1 p-2 border border-gray-500 rounded w-full required"
+              className="mt-1 p-2 border border-black rounded w-full required"
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="author" className="block font-medium text-gray-800">
+            <label htmlFor="author" className="block font-medium text-black">
               Author:
             </label>
             <input
@@ -67,11 +69,11 @@ const AddBook = () => {
               name="author"
               value={book.author}
               onChange={handleChange}
-              className="mt-1 p-2 border border-gray-500 rounded w-full required"
+              className="mt-1 p-2 border border-black rounded w-full required"
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="desc" className="block font-medium text-gray-800">
+            <label htmlFor="desc" className="block font-medium text-black">
               Description
             </label>
             <input
@@ -85,7 +87,7 @@ const AddBook = () => {
           </div>
 
           <div className="mb-3">
-            <label htmlFor="price" className="block font-medium text-gray-800">
+            <label htmlFor="price" className="block font-medium text-black">
               Price
             </label>
             <input
@@ -94,11 +96,11 @@ const AddBook = () => {
               name="price"
               onChange={handleChange}
               value={book.price}
-              className="mt-1 p-2 border border-gray-500 rounded w-full required"
+              className="mt-1 p-2 border border-black rounded w-full required"
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="image" className="block font-medium text-gray-800">
+            <label htmlFor="image" className="block font-medium text-black">
               Image:
             </label>
             <input
@@ -107,7 +109,7 @@ const AddBook = () => {
               name="image"
               value={book.image}
               onChange={handleChange}
-              className="mt-1 p-2 border border-gray-500 rounded w-full required"
+              className="mt-1 p-2 border border-black rounded w-full required"
             />
           </div>
           <div>
@@ -118,12 +120,12 @@ const AddBook = () => {
               checked={checked}
               onChange={() => setChecked(!checked)}
             />
-            <label htmlFor="available">Available</label>
+            <label htmlFor="available" className='font-semibold'>Available</label>
           </div>
           <div className="text-center">
             <button
               type="submit"
-              className="font-bold font-mono border-2 border-white px-4 py-2 bg-red-800 text-white rounded-lg hover:bg-red-400"
+              className="font-bold font-mono border-2 border-white px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-300"
             >
               SUBMIT
             </button>
