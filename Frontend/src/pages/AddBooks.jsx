@@ -43,7 +43,7 @@ const AddBook = () => {
     <div>
       <div>
         <div className="text-center text-2xl font-bold font-mono">
-        <h1>ADD NAME OF THE BOOK:</h1>
+        <h1>ADD BOOK DETAILS:</h1>
         </div>
         <form className="max-w-md mx-auto bg-gray-200 border border-gray-700 rounded-lg shadow-md px-8 pt-6 pb-8 mb-4 w-[90%]" onSubmit={handleSubmit}>
           <div className="mb-3">
