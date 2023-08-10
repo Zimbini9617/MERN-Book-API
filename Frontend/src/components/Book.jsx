@@ -19,13 +19,13 @@ const Book = ({ book, deleteBook }) => {
       <div>
         <Link
           to={`/books/${_id}`}
-          className="bg-blue-500 text-white px-2 py-1 rounded-md mt-2 inline-block mr-4"
+          className="bg-blue-700 hover:bg-blue-400 text-white px-2 py-1 rounded-md mt-2 inline-block mr-4"
         >
           Update
         </Link>
         <button
           onClick={() => deleteBook(_id)}
-          className="bg-purple-600 text-white px-2 py-1 rounded-md mt-2 inline-block mr-4"
+          className="bg-red-700 hover:bg-red-400 text-white px-2 py-1 rounded-md mt-2 inline-block mr-4"
         >
           Delete
         </button>
